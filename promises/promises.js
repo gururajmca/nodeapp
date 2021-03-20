@@ -1,14 +1,17 @@
 // Promises
+const rand = () => Math.floor(Math.random() * 10) + 1;
+
 let p1 = new Promise((resolve, reject) => {
   let x = 10;
-  // resolve(x); // Handle this in then()
-  reject('failed to resolve the promuise');
+  let num = rand();
+  setTimeout(resolve, 1500, num); // Handle this in then()
+  // reject('failed to resolve the promuise');
 });
 
-console.log(p1);
+
 p1.then((response)=> {
   console.log('What I got ', response);
-  return 'My Age is ' + response;
+  return response * 2;
 }).then(secondResponse => {
   console.log('In second response: ', secondResponse);
 }).catch((err) => {
