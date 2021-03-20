@@ -1,0 +1,28 @@
+{
+  "name": "nodeapp",
+  "version": "1.0.0",
+  "description": "Sample App",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/gururajmca/nodeapp.git"
+  },
+  "keywords": [
+    "Sample",
+    "app"
+  ],
+  "author": "Gururaj",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/gururajmca/nodeapp/issues"
+  },
+  "homepage": "https://github.com/gururajmca/nodeapp#readme",
+  "devDependencies": {
+    "body-parser": "^1.18.2",
+    "express": "^4.16.2",
+    "mysql": "^2.15.0"
+  }
+}
