@@ -22,3 +22,18 @@ fetch(req)
     .catch((err) => {
         console.log('Error:', err.message);
     });
+
+let todo = {
+    userId: 123,
+    title: "loren impsum doloris",
+    completed: false
+};
+fetch('https://jsonplaceholder.typicode.com/todos', {
+        method: 'POST',
+        body: JSON.stringify(todo),
+        headers: { 'Content-Type': 'application/json' }
+    }).then(res => res.json())
+      .then(json => {
+        let appendText = document.getElementById('user');
+        appendText.textContent = JSON.stringify(json);
+      });
